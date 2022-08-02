@@ -79,9 +79,9 @@ li:hover>a {
 }
 
 
-/*COVER*/
+/*//////////////////COVER////////////////////*/
 .container_cover {
-    height: 700px;
+    height: 80vh;
     width: 80%;
     background-color: rgba(191, 245, 227, 0.284);
     justify-content: center;
