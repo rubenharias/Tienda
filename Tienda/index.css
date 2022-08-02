@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Source+Code+Pro:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Source Code Pro', monospace;
+    
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    margin-top: 40px;
+    position: fixed;
+    z-index: 1;
+    background-color: aquamarine;
+}
+
+.logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo img {
+    width: 80px;
+}
+
+.container_menu {
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-left: 36px;
+    border-radius: 30px;
+    padding: 5px 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+
+}
+
+li:hover {
+    background-color: black;
+}
+
+li:hover>a {
+    color: white;
+}
+
+
+/*COVER*/
+.container_cover {
+    height: 700px;
+    width: 100%;
+    background-color: rgb(191, 245, 227);
+
+}
+
+.cover {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    background-color: rgb(191, 245, 227);
+    margin: auto;
+}
+
+.cover .text {
+    width: 50%;
+    max-width: 400px;
+}
+
+.imagen_cover {
+    width: 50%;
+}
+
+.imagen_cover img {
+    width: 90%;
+    height: 90%;
+    border-radius: 30px;
+    animation: move-vector 5s linear infinite;
+}
+
+@keyframes move-vector {
+    0% {
+        transform: translateY(15px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(15px);
+    }
+
+
+}
+
+/*/////////////////LOGIN//////////////////*/
+.header_login{    
+        width: 100%;
+        height: 80px;
+        margin-top: 40px;
+        position: fixed;
+        z-index: 1;
+        background-color: rgba(127, 255, 212, 0.311);
+   
+}
+
+
+
+.container_login {
+    background-image: url(media/img_login.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.container_register-login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    height: 500px;
+    width: 1200px;
+    padding: 25px;
+}
+
+.register {
+    background-color: rgba(240, 248, 255, 0.453);
+    border-radius: 15px;
+    width: 47%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.register form h2 {
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.register form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.register form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 70%;
+    border: none;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+
+.register form button {
+    padding: 10px 30px;
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.login {
+    background-color: rgba(240, 248, 255, 0.453);
+    border-radius: 15px;
+    width: 47%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.login form h2 {
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.login form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 70%;
+    border: none;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+
+.login form button {
+    padding: 10px 30px;
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
