@@ -39,7 +39,7 @@ body {
 
 .logo img {
     width: 80px;
-    filter: drop-shadow(1px 1px 5px white);
+    filter: drop-shadow(1px 1px 10px white);
 }
 
 .container_menu {
@@ -102,8 +102,8 @@ li:hover {
     animation: move-vector 5s linear infinite;
 }
 .hero a button{
-    font-size: 30px;
-    padding: 5px 15px;
+    font-size: 35px;
+    padding: 10px 25px;
     border: none;
     font-weight: bold;
     cursor: pointer;
@@ -292,6 +292,11 @@ li:hover {
     border: 1px solid black;
     height: 100%;
     width: 30%;
+}
+.prod_izquierda:hover, .prod_derecha:hover,.prod_chico:hover{
+    box-shadow: 1px 1px 15px white;
+    transition: 200ms linear;
+    cursor: pointer;
 }
 
 
