@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Source+Code+Pro:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+body {}
+
+
+
+.header_principal {
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    position: fixed;
+    top: 5px;
+    z-index: 1;
+    background-color: rgba(253, 253, 253, 0);
+}
+
+.logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+    filter: drop-shadow(1px 1px 10px white);
+}
+
+.container_menu {
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-left: 36px;
+    border-radius: 30px;
+    padding: 5px 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+
+}
+
+li:hover {
+    background-color: rgba(255, 255, 255, 0.667);
+    transition: 250ms linear;
+}
+
+.header_principal .container_menu .menu nav ul li:hover>a {
+    color: black;
+}
+
+/*///////////////HERO/////////////*/
+
+.hero {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)),
+        url(../media/hero.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero h1 {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    animation: move-vector 5s linear infinite;
+}
+
+.hero a button {
+    font-size: 35px;
+    padding: 10px 25px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hero a button:hover {
+    box-shadow: 1px 1px 10px white;
+    transition: 300ms linear;
+}
+
+
+
+@keyframes move-vector {
+    0% {
+        transform: translateY(15px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(15px);
+    }
+}
+
+
+/*/////////PANEL CON PRODUCTOS PRINCIPALES///////*/
+.productos_principal {
+    background-color: rgb(67, 65, 65);
+    height: 90vh;
+}
+
+.container_prodPrincipal {
+    max-width: 1200px;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 530px;
+    margin: auto;
+}
+
+.titulo_prodPrincipal {
+    background-color: rgb(73, 191, 218);
+    color: #f2f2f2;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5%;
+    margin-bottom: 20px;
+}
+
+.container_prod {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 95%;
+}
+
+.prod_izquierda {
+    border: 1px solid black;    
+    max-width: 30%; 
+}
+
+.img_prodPrincipal a img {   
+    object-fit: cover;
+    width: 100%;
+    height: 100%;  
+}
+.prods4 {
+    background-color: rgba(0, 255, 255, 0);
+    height: 100%;
+    width: 33.33%;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.prod_chico {
+    background-color: rgb(0, 0, 0);
+    border: 1px solid black;
+    height: 46%;
+    width: 45%;
+}
+
+.prod_derecha {
+    border: 1px solid black;
+    height: 100%;
+    max-width: 30%;
+}
+
+.prod_izquierda:hover,
+.prod_derecha:hover,
+.prod_chico:hover {
+    box-shadow: 1px 1px 15px white;
+    transition: 200ms linear;
+    cursor: pointer;
+}
+
+
+
+/*/////////////////LOGIN//////////////////*/
+.header_login {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(127, 255, 212, 0);
+}
+
+.header_login .container_menu .menu ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.header_login .container_menu .menu nav ul li:hover {
+    background-color: rgb(222, 208, 208);
+    transition: 250ms linear;
+}
+
+.header_login .container_menu .menu nav ul li:hover>a {
+    color: black;
+}
+
+.container_login {
+    background-image: linear-gradient(45deg,
+            rgba(66, 177, 90, 0.7),
+            rgba(0, 0, 0, 0.8)), url(../media/fondo_DetalleProd.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.container_register-login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    height: 500px;
+    width: 1200px;
+    padding: 25px;
+}
+
+.register {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    width: 47%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.register form h2 {
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.register form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.register form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 70%;
+    border: none;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+
+.register form button {
+    padding: 10px 30px;
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.login {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    width: 47%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.login form h2 {
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.login form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 70%;
+    border: none;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+
+.login form button {
+    padding: 10px 30px;
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.register form input:hover,
+.register form button:hover,
+.login form input:hover,
+.login form button:hover {
+    box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.5);
+    transition: 250ms linear;
+    background-color: #e8e9a7;
+}
+.splide__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
